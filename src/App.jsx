@@ -4,7 +4,7 @@ import './styles/navbar.css'
 import Life from './components/life';
 import Education from './components/education';
 import Career from './components/career';
-
+import Achievement from './components/achievements';
 function App() {
   return (
     <div>
@@ -46,10 +46,6 @@ function App() {
 
       {/* Carousel component */}
       <Carousel />
-
-
-
-
       <div id='biographer-container'>
         {/* Life component */}
         <section id='life'>
@@ -62,6 +58,10 @@ function App() {
         {/* Career component */}
         <section id='career'>
           <Career />
+        </section>
+        {/* Achievement componenent */}
+        <section id='achievements'>
+          <Achievement />
         </section>
       </div>
     </div>
