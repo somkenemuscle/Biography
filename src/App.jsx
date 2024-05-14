@@ -7,8 +7,12 @@ import Career from './components/career';
 import Achievement from './components/achievements';
 import Nobelprize from './components/nobelprize';
 import Books from './components/books'
+import useSlideAnimation from '../src/animation/useSlideAnimation';
 
 function App() {
+  //Fade in Animation
+  useSlideAnimation();
+
   return (
     <div>
       <nav className="navbar sticky-top navbar-expand-lg">
@@ -48,30 +52,32 @@ function App() {
       </nav>
 
       {/* Carousel component */}
-      <Carousel />
+      <section className='hidden'>
+        <Carousel />
+      </section>
       <div id='biographer-container'>
         {/* Life component */}
-        <section id='life'>
+        <section className='hidden' id='life'>
           <Life />
         </section>
         {/* Education component */}
-        <section id='education'>
+        <section className='hidden' id='education'>
           <Education />
         </section>
         {/* Career component */}
-        <section id='career'>
+        <section className='hidden' id='career'>
           <Career />
         </section>
         {/* Achievement componenent */}
-        <section id='achievements'>
+        <section className='hidden' id='achievements'>
           <Achievement />
         </section>
         {/* Nobleprize component */}
-        <section id='nobelprize'>
+        <section className='hidden' id='nobelprize'>
           <Nobelprize />
         </section>
         {/* Book components */}
-        <section id='books'>
+        <section className='hidden' id='books'>
           <Books />
         </section>
       </div>
