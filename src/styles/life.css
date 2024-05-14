@@ -1,0 +1,30 @@
+.life_einstein_png {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+
+#life-container p {
+    text-align: left;
+    word-spacing: 1px;
+    letter-spacing: -0.3px;
+}
+
+.poly_png {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .life_einstein_png {
+        max-width: 100%;
+        /* Adjust as needed */
+    }
+}

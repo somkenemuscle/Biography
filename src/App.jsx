@@ -1,6 +1,9 @@
 import './App.css';
 import Carousel from './components/carousel';
 import './styles/navbar.css'
+import Life from './components/life';
+import Education from './components/education';
+import Career from './components/career';
 
 function App() {
   return (
@@ -45,7 +48,13 @@ function App() {
       <Carousel />
 
 
-      <div>
+
+
+      <div id='biographer-container'>
+        {/* Life component */}
+        <Life />
+        {/* Education component */}
+        <Education />
       </div>
     </div>
   );

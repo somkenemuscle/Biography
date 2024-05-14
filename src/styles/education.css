@@ -1,0 +1,44 @@
+#education-container {
+    margin-top: 5%;
+}
+
+#education-container p {
+    text-align: left;
+}
+
+.edu_school_pic {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    border-radius: 15px;
+}
+
+#edu2-container {
+    margin-top: 5%;
+}
+
+
+
+.poly_pic {
+    max-width: 100%;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    border-radius: 15px;
+}
+
+#edu3-container {
+    margin-top: 5%;
+}
+
+.wife_pic {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1%;
+    border-radius: 15px;
+}
