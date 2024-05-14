@@ -5,6 +5,9 @@ import Life from './components/life';
 import Education from './components/education';
 import Career from './components/career';
 import Achievement from './components/achievements';
+import Nobelprize from './components/nobelprize';
+import Books from './components/books'
+
 function App() {
   return (
     <div>
@@ -62,6 +65,14 @@ function App() {
         {/* Achievement componenent */}
         <section id='achievements'>
           <Achievement />
+        </section>
+        {/* Nobleprize component */}
+        <section id='nobelprize'>
+          <Nobelprize />
+        </section>
+        {/* Book components */}
+        <section id='books'>
+          <Books />
         </section>
       </div>
     </div>

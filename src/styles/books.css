@@ -1,0 +1,38 @@
+
+.card-hr {
+    height: 2px;
+    background-color: darkgray;
+  }
+  
+  .card-sub_heading{
+  text-align: center;
+  font-weight: 600;
+  }
+  .card-row {
+  padding-bottom: 3%;
+  }
+  
+  .book-col{
+    padding-bottom: 2%;
+    padding-top: 2%;
+  }
+  
+  .card img{
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .card-body a{
+    text-decoration: none;
+  }
+  
+  .card-body a:hover{
+    text-decoration-color: black;
+    text-decoration: underline;
+  }
+  
+  .card-title {
+    font-size: medium;
+    font-weight: 500;
+    text-align: center;
+  }

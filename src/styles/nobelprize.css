@@ -1,0 +1,24 @@
+#nobelprize-container {
+    margin-top: 7%;
+}
+
+#nobelprize-container h2 {
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+.achievement-txt1 {
+    text-align: left;
+}
+
+.achivement-txt2 {
+    padding-top: 3%;
+    text-align: left;
+}
+
+.einstein_award_png {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
