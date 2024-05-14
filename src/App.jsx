@@ -55,6 +55,8 @@ function App() {
         <Life />
         {/* Education component */}
         <Education />
+        {/* Career component */}
+        <Career />
       </div>
     </div>
   );

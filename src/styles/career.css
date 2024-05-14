@@ -1,0 +1,13 @@
+.career_img_2{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    /* text-align: left; */
+    margin-bottom: 3%;
+    margin-top: 3%;
+    border-radius: 8px;
+}
+.career-text{
+    text-align: left;
+}
