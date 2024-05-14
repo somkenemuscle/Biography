@@ -336,11 +336,45 @@ function career() {
         In 1964, John Stewart Bell carried the analysis of quantum entanglement much further. He deduced that if measurements are performed independently on the two separated particles of an entangled pair, then the assumption that the outcomes depend upon hidden variables within each half implies a mathematical constraint on how the outcomes on the two measurements are correlated. This constraint would later be called a Bell inequality. Bell then showed that quantum physics predicts correlations that violate this inequality.
       </p>
       <p className='career-text'>
-      Consequently, the only way that hidden variables could explain the predictions of quantum physics is if they are "nonlocal", which is to say that somehow the two particles are able to interact instantaneously no matter how widely they ever become separated. Bell argued that because an explanation of quantum phenomena in terms of hidden variables would require nonlocality, the EPR paradox "is resolved in the way which Einstein would have liked least"
-      Despite this, and although Einstein personally found the argument in the EPR paper overly complicated,that paper became among the most influential papers published in Physical Review. It is considered a centerpiece of the development of quantum information theory.
+        Consequently, the only way that hidden variables could explain the predictions of quantum physics is if they are "nonlocal", which is to say that somehow the two particles are able to interact instantaneously no matter how widely they ever become separated. Bell argued that because an explanation of quantum phenomena in terms of hidden variables would require nonlocality, the EPR paradox "is resolved in the way which Einstein would have liked least"
+        Despite this, and although Einstein personally found the argument in the EPR paper overly complicated,that paper became among the most influential papers published in Physical Review. It is considered a centerpiece of the development of quantum information theory.
       </p>
 
+      <h4>Unified field theory</h4>
+      <p className='career-text'>
+        Encouraged by his success with general relativity, Einstein sought an even more ambitious geometrical theory that would treat gravitation and electromagnetism as aspects of a single entity. In 1950, he described his unified field theory in a Scientific American article titled "On the Generalized Theory of Gravitation".His attempt to find the most fundamental laws of nature won him praise but not success: a particularly conspicuous blemish of his model was that it did not accommodate the strong and weak nuclear forces, neither of which was well understood until many years after his death. Although most researchers now believe that Einstein's approach to unifying physics was mistaken, his goal of a theory of everything is one to which his successors still aspire.
+      </p>
 
+      <h4>Other investigations</h4>
+      <p className='career-text'>
+        Einstein conducted other investigations that were unsuccessful and abandoned. These pertain to force, superconductivity, and other research.
+      </p>
+
+      <h4>Collaboration with other scientists</h4>
+      <p className='career-text'>
+        In addition to longtime collaborators Leopold Infeld, Nathan Rosen, Peter Bergmann and others, Einstein also had some one-shot collaborations with various scientists.
+      </p>
+
+      <h6>Einstein–de Haas experiment</h6>
+      <p className='career-text'>
+        In 1908, Owen Willans Richardson predicted that a change in the magnetic moment of a free body will cause this body to rotate. This effect is a consequence of the conservation of angular momentum and is strong enough to be observable in ferromagnetic materials.Einstein and Wander Johannes de Haas published two papers in 1915 claiming the first experimental observation of the effect
+        Measurements of this kind demonstrate that the phenomenon of magnetization is caused by the alignment (polarization) of the angular momenta of the electrons in the material along the axis of magnetization. These measurements also allow the separation of the two contributions to the magnetization: that which is associated with the spin and with the orbital motion of the electrons.
+      </p>
+      <div className='col-xl-12 col-lg-12'>
+        <img src={career_img13} className="career_img_2" alt="..." />
+      </div>
+      <p className='career-text'>
+        The Einstein-de Haas experiment is the only experiment concived, realized and published by Albert Einstein himself.
+        A complete original version of the Einstein-de Haas experimental equipment was donated by Geertruida de Haas-Lorentz, wife of de Haas and daughter of Lorentz, to the Ampère Museum in Lyon France in 1961 where it is currently on display. It was lost among the museum's holdings and was rediscovered in 2023
+      </p>
+      <h6>Einstein as an inventor</h6>
+      <p className='career-text'>
+        In 1926, Einstein and his former student Leó Szilárd co-invented (and in 1930, patented) the Einstein refrigerator. This absorption refrigerator was then revolutionary for having no moving parts and using only heat as an input. On 11 November 1930, U.S. patent 1,781,541 was awarded to Einstein and Leó Szilárd for the refrigerator. Their invention was not immediately put into commercial production, but the most promising of their patents were acquired by the Swedish company Electrolux
+        Einstein also invented an electromagnetic pump,sound reproduction device, and several other household devices
+      </p>
+      <div className='col-xl-12 col-lg-12'>
+        <img src={career_graph1} className="career_graph" alt="..." />
+      </div>
     </div>
   )
 }

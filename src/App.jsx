@@ -52,11 +52,17 @@ function App() {
 
       <div id='biographer-container'>
         {/* Life component */}
-        <Life />
+        <section id='life'>
+          <Life />
+        </section>
         {/* Education component */}
-        <Education />
+        <section id='education'>
+          <Education />
+        </section>
         {/* Career component */}
-        <Career />
+        <section id='career'>
+          <Career />
+        </section>
       </div>
     </div>
   );
