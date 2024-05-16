@@ -7,11 +7,16 @@ import albert3 from '../image/chidindu (22).png';
 function carousel() {
     return (
         <div>
-            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
+                <div className="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
                 <div className="carousel-inner">
 
                     <div className="carousel-item active">
-                        <img src={albert1} class="d-block w-100" alt="..." />
+                        <img src={albert1} className="d-block w-100" alt="..." />
                     </div>
                     <div className="carousel-item">
                         <img src={albert2} className="d-block w-100" alt="..." />

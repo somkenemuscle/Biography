@@ -12,7 +12,8 @@ function career() {
   return (
     <div>
       <section>
-        <h3>Early academic career (1908-1933): </h3>
+        <h3 className="career-heading" >Early academic career (1908-1933): </h3>
+        <hr />
         <p className='career-text'>
           Einstein's career sent him to multiple countries.He earned his doctorate from the University of Zurich in 1905 and subsequently took on professor positions in Zurich (1909), Prague (1911) and Zurich again (1912).
           Einstein's sabbatical as a civil servant approached its end in 1908, when he secured a junior teaching position at the University of Bern.
@@ -106,7 +107,7 @@ function career() {
             <thead>
               <tr>
 
-                <th classscope="col">Title (translated)</th>
+                <th classcope="col">Title (translated)</th>
                 <th scope="col">Area of Focus</th>
                 <th scope="col">Received</th>
                 <th scope="col">Published</th>

@@ -1,17 +1,37 @@
-#biographer-container{
+#biographer-container {
     padding-left: 10%;
     padding-right: 10%;
     margin-top: 6%;
 }
 
-
-
-
 @media only screen and (max-width: 818px) {
-    #biographer-container{
+    #biographer-container {
         padding-left: 5%;
-        padding-right: 3%;
+        padding-right: 5%;
     }
-    
-    
+
+
+}
+
+.nav-link {
+    color: black;
+}
+
+
+.site-name {
+    text-align: center;
+    background-color: black;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+.site-text1 {
+    font-weight: 700;
+    color: white;
+    margin-left: 0.4%;
+}
+
+.site-text2 {
+    font-weight: 400;
+    color: white;
 }
