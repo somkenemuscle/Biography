@@ -7,8 +7,20 @@ import career_img9 from '../image/440px-Photoelectric_effect_in_a_solid_-_diagra
 import career_img11 from '../image/anothernews.jpg';
 import career_img12 from '../image/Niels_Bohr_Albert_Einstein4_by_Ehrenfest_cr.jpg';
 import career_img13 from '../image/Solvay_conference_1927.jpg';
+import { Popover } from 'bootstrap';
+import { useEffect } from 'react';
 
-function career() {
+
+function Career() {
+  useEffect(() => {
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new Popover(popoverTriggerEl));
+
+    return () => {
+      // Cleanup if needed
+      popoverList.forEach(popover => popover.dispose());
+    };
+  }, []); // empty dependency array to mimic componentDidMount
   return (
     <div>
       <section>
@@ -18,10 +30,19 @@ function career() {
           Einstein's sabbatical as a civil servant approached its end in 1908, when he secured a junior teaching position at the University of Bern.
         </p>
         <p className='career-text'>
-          In 1909, a lecture on relativistic electrodynamics that he gave at the University of Zurich, much admired by Alfred Kleiner, led to Zürich's luring him away from Bern with a newly created associate professorship.Promotion to a full professorship followed in April 1911, when he accepted a chair at the German Charles-Ferdinand University in Prague, a move which required him to become an Austrian citizen of the Austro-Hungarian Empire. His time in Prague saw him producing eleven research papers.Einstein's sabbatical as a civil servant approached its end in 1908, when he secured a junior teaching position at the University of Bern.
+          In 1909, a lecture on relativistic
+          <span tabIndex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="In physics,electromagnetism is an interaction that occurs between particles with electric charge via electromagnetic fields. The electromagnetic force is one of the four fundamental forces of nature. It is the dominant force in the interactions of atoms and molecules. ">
+            <span id="popover">electrodynamics</span>
+          </span>
+          that he gave at the University of Zurich, much admired by Alfred Kleiner, led to Zürich's luring him away from Bern with a newly created associate professorship.Promotion to a full professorship followed in April 1911, when he accepted a chair at the German Charles-Ferdinand University in Prague, a move which required him to become an Austrian citizen of the
+          <span tabIndex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Austria-Hungary, often referred to as the Austro-Hungarian Empire or the Dual Monarchy, was a multi-national constitutional monarchy in Central Europe[c] between 1867 and 1918. Austria-Hungary was a military and diplomatic alliance of two sovereign states with a single monarch who was titled both emperor of Austria and King of Hungary.[7] Austria-Hungary constituted the last phase in the constitutional evolution of the Habsburg monarchy: it was formed with the Austro-Hungarian Compromise of 1867 in the aftermath of the Austro-Prussian War and was dissolved shortly after Hungary terminated the union with Austria on 31 October 1918. ">
+            <span id="popover">Austro-Hungarian Empire</span>
+          </span>
+          .His time in Prague saw him producing eleven research papers.Einstein's sabbatical as a civil servant approached its end in 1908, when he secured a junior teaching position at the University of Bern.
           In 1909, a lecture on relativistic electrodynamics that he gave at the University of Zurich, much admired by Alfred Kleiner, led to Zürich's luring him away from Bern with a newly created associate professorship. Promotion to a full professorship followed in April 1911, when he accepted a chair at the German Charles-Ferdinand University in Prague, a move which required him to become an Austrian citizen of the Austro-Hungarian Empire.
           His time in Prague saw him producing eleven research papers.
         </p>
+
 
         <div className='row'>
           <div className='col-xl-12 col-lg-12'>
@@ -30,8 +51,16 @@ function career() {
           <div className='col-xl-12 col-lg-12'>
             <span className='career-text'>
               In July 1912, he returned to his alma mater, the ETH Zurich, to take up a chair in theoretical physics. His
-              teaching activities there centered on thermodynamics and analytical mechanics, and his research interests
-              included the molecular theory of heat, continuum mechanics and the development of a relativistic theory of
+              teaching activities there centered on
+              <span tabIndex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Thermodynamics is a branch of physics that deals with heat, work, and temperature, and their relation to energy, entropy, and the physical properties of matter and radiation. The behavior of these quantities is governed by the four laws of thermodynamics, which convey a quantitative description using measurable macroscopic physical quantities, but may be explained in terms of microscopic constituents by statistical mechanics.">
+                <span id="popover">thermodynamics</span>
+              </span>
+              and analytical mechanics, and his research interests
+              included the molecular theory of heat,
+              <span tabIndex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Continuum mechanics is a branch of mechanics that deals with the deformation of and transmission of forces through materials modeled as a continuous medium (also called a continuum) rather than as discrete particles. The French mathematician Augustin-Louis Cauchy was the first to formulate such models in the 19th century. ">
+                <span id="popover">continuum mechanics</span>
+              </span>
+              and the development of a relativistic theory of
               gravitation. In his work and contribution on the latter topic, he was assisted by his friend, Marcel Grossmann, whose
               knowledge of the kind of mathematics required was greater than his own. In the spring of 1913, two German visitors, Max Planck
               and Walther Nernst, called upon Einstein in Zürich in the hope of persuading him to relocate to Berlin. They offered him membership of the Prussian Academy of Sciences, the directorship of the planned Kaiser Wilhelm Institute
@@ -43,8 +72,17 @@ function career() {
         <p className='career-text'>girlfriend, Elsa Löwenthal. He duly joined the Academy on 24 July 1913, and moved into an apartment in the Berlin district
           of Dahlem on 1 April 1914. He was installed in his Humboldt University position shortly thereafter.The outbreak of the First World War in July 1914 marked the beginning of Einstein's gradual estrangement from the nation of his birth.
         </p>
-        <p> When the "Manifesto of the Ninety-Three" was published in October 1914—a document signed by a host of prominent German thinkers that justified Germany's belligerence—Einstein was one of the few German intellectuals to distance himself from it and sign the alternative, eirenic "Manifesto to the Europeans" instead. But this expression of his doubts about German policy did not prevent him from being elected to a two-year term as president of the German Physical Society in 1916. And when the Kaiser Wilhelm Institute for Physics opened its doors the following year—its foundation
-          delayed because of the war—Einstein was appointed its first director, just as Planck and Nernst had promised. Einstein resigned from the Prussian Academy in March 1933. His accomplishments in Berlin had included the completion of the general theory of relativity, proving the Einstein–de Haas effect, contributing to the quantum theory of radiation, and the development of Bose–Einstein statistics.
+        <p> When the
+          <span tabIndex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content=" The ″Manifesto to the Europeans″ was a pacifistic proclamation written in response to the Manifesto of the Ninety-Three that included as its authors, German astronomer, Wilhelm Julius Foerster, and German physiologist, Georg Friedrich Nicolai.">
+            <span id="popover"> "Manifesto of the Ninety-Three"</span>
+          </span>
+          was published in October 1914—a document signed by a host of prominent German thinkers that justified Germany's belligerence—Einstein was one of the few German intellectuals to distance himself from it and sign the alternative, eirenic "Manifesto to the Europeans" instead. But this expression of his doubts about German policy did not prevent him from being elected to a two-year term as president of the German Physical Society in 1916. And when the Kaiser Wilhelm Institute for Physics opened its doors the following year—its foundation
+          delayed because of the war—Einstein was appointed its first director, just as Planck and Nernst had promised. Einstein resigned from the Prussian Academy in March 1933. His accomplishments in Berlin had included the completion of the general theory of relativity, proving the
+          <span tabIndex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content=" The Einstein–de Haas effect is a physical phenomenon in which a change in the magnetic moment of a free body causes this body to rotate. The effect is a consequence of the conservation of angular momentum. It is strong enough to be observable in ferromagnetic materials.  ">
+            <span id="popover"> Einstein–de Haas effect</span>
+          </span>
+          , contributing to the quantum theory of radiation, and the development of Bose-Einstein statistics.
+
         </p>
 
 
@@ -56,7 +94,11 @@ function career() {
           By the fall of 1915, his reimagining of the mathematics of gravitation in terms of Riemannian geometry was complete, and he applied his new theory not just to the behavior of the Sun as a gravitational lens but also to another astronomical phenomenon, the precession of the perihelion of Mercury (a slow drift in the point in Mercury's elliptical orbit at which it approaches the Sun most closely)
         </p>
         <p className='career-text'>
-          A total eclipse of the Sun that took place on 29 May 1919 provided an opportunity to put his theory of gravitational lensing to the test, and observations performed by Sir Arthur Eddington yielded results that were consistent with his calculations. Eddington's work was reported at length in newspapers around the world. On 7 November 1919, for example, the leading British newspaper, The Times, printed a banner headline that read: "Revolution in Science – New Theory of the Universe – Newtonian Ideas Overthrown".
+          A
+          <span tabIndex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content=" The May 29, 1919, total solar eclipse occurred because the Moon aligned between the Sun and the Earth in which they appeared overlapped to a certain population of observers on the Earth. The Moon covered the Sun's light, which led to an absence of light for a small period of time. The solar eclipse of May 29, 1919, was the longest solar eclipse that had been observed and recorded up until June 8, 1937. This eclipse was visible through locations like southeastern Peru and northern Chile. ">
+            <span id="popover">total eclipse of the Sun that took place on 29 May 1919 </span>
+          </span>
+          provided an opportunity to put his theory of gravitational lensing to the test, and observations performed by Sir Arthur Eddington yielded results that were consistent with his calculations. Eddington's work was reported at length in newspapers around the world. On 7 November 1919, for example, the leading British newspaper, The Times, printed a banner headline that read: "Revolution in Science – New Theory of the Universe – Newtonian Ideas Overthrown".
         </p>
 
 
@@ -73,7 +115,11 @@ function career() {
           In 1922, Einstein's travels were to the old world rather than the new. He devoted six months to a tour of Asia that saw him speaking in Japan, Singapore and Sri Lanka (then known as Ceylon).
         </p>
         <p className='career-text'>
-          After his first public lecture in Tokyo, he met Emperor Yoshihito and his wife at the Imperial Palace, with thousands of spectators thronging the streets in the hope of catching a glimpse of him. (In a letter to his sons, he wrote that Japanese people seemed to him to be generally modest, intelligent and considerate, and to have a true appreciation of art. But his picture of them in his diary was less flattering: "[the] intellectual needs of this nation seem to be weaker than their artistic ones – natural disposition?" His journal also contains views of China and India which were uncomplimentary. Of Chinese people, he wrote that "even the children are spiritless and look obtuse... It would be a pity if these Chinese supplant all other races.
+          After his first public lecture in Tokyo, he met Emperor Yoshihito and his wife at the
+          <span tabIndex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content=" The Tokyo Imperial Palace (皇居, Kōkyo, literally 'Imperial Residence') is the main residence of the Emperor of Japan. It is a large park-like area located in the Chiyoda district of the Chiyoda ward of Tokyo and contains several buildings including the Fukiage Palace (吹上御所, Fukiage gosho) where the Emperor has his living quarters, the main palace (宮殿, Kyūden) where various ceremonies and receptions take place, some residences of the Imperial Family, an archive, museums and administrative offices.The 1.15-square-kilometer (0.44 sq mi) palace grounds and gardens are built on the site of the old Edo Castle. ">
+            <span id="popover"> Imperial Palace</span>
+          </span>
+          , with thousands of spectators thronging the streets in the hope of catching a glimpse of him. In a letter to his sons, he wrote that Japanese people seemed to him to be generally modest, intelligent and considerate, and to have a true appreciation of art. But his picture of them in his diary was less flattering: "[the] intellectual needs of this nation seem to be weaker than their artistic ones – natural disposition?" His journal also contains views of China and India which were uncomplimentary. Of Chinese people, he wrote that "even the children are spiritless and look obtuse... It would be a pity if these Chinese supplant all other races.
         </p>
         <p className='career-text'>
           Einstein's decision to tour the eastern hemisphere in 1922 meant that he was unable to go to Stockholm in the December of that year to participate in the Nobel prize ceremony. His place at the traditional Nobel banquet was taken by a German diplomat, who gave a speech praising him not only as a physicist but also as a campaigner for peace. A two week visit to Spain that he undertook in 1923 saw him collecting another award, a membership of the Spanish Academy of Sciences signified by a diploma handed to him by King Alfonso XIII. (His Spanish trip also gave him a chance to meet a fellow Nobel laureate, the neuroanatomist Santiago Ramón y Cajal.)
@@ -81,13 +127,21 @@ function career() {
 
         <h3>1922–1932: Serving the League of Nations</h3>
         <p> From 1922 until 1932, with the exception of a few months in 1923 and 1924, Einstein was a member of the Geneva-based International Committee on
-          Intellectual Cooperation of the League of Nations, a group set up by the League to encourage scientists, artists, scholars, teachers and other people engaged in the life
+          Intellectual Cooperation of the
+          <span tabIndex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content=" The League of Nations (French: Société des Nations [sɔsjete de nɑsjɔ̃]) was the first worldwide intergovernmental organisation whose principal mission was to maintain world peace.[1] It was founded on 10 January 1920 by the Paris Peace Conference that ended the First World War. The main organization ceased operations on 18 April 1946 when many of its components were relocated into the new United Nations. As the template for modern global governance, the League profoundly shaped the modern world. ">
+            <span id="popover"> League of Nations</span>
+          </span>
+          , a group set up by the League to encourage scientists, artists, scholars, teachers and other people engaged in the life
           of the mind to work more closely with their counterparts in other countries.</p>
         <p className='career-text'>
           He was appointed as a German delegate rather than as a representative of Switzerland
-          because of the machinations of two Catholic activists, Oskar Halecki and Giuseppe Motta.By persuading Secretary General Eric Drummond to deny Einstein the place on the committee
-          reserved for a Swiss thinker, they created an opening for Gonzague de Reynold, who used his League of Nations position as a platform from which to promote traditional Catholic
-          doctrine. Einstein's former physics professor Hendrik Lorentz and the Polish chemist Marie Curie were also members of the committee.
+          because of the machinations of two Catholic activists,
+          <span tabIndex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content=" Oskar Halecki was a Polish historian, social and Catholic activist. Doctor Honoris Causa of the Polish University Abroad (1973). ">
+            <span id="popover">  Oskar Halecki</span>
+          </span>
+          and Giuseppe Motta
+          .By persuading Secretary General Eric Drummond to deny Einstein the place on the committee
+          reserved for a Swiss thinker, they created an opening for Gonzague de Reynold, who used his League of Nations position as a platform from which to promote traditional Catholic doctrine. Einstein's former physics professor Hendrik Lorentz and the Polish chemist Marie Curie were also members of the committee.
         </p>
 
         <h3>1905 – Annus Mirabilis papers (Scientific Career)</h3>
@@ -95,7 +149,15 @@ function career() {
           Throughout his life, Einstein published hundreds of books and articles. He published more than 300 scientific papers and 150 non-scientific ones. On 5 December 2014, universities and archives announced the release of Einstein's papers, comprising more than 30,000 unique documents. Einstein's intellectual achievements and originality have made the word "Einstein" synonymous with "genius”. In addition to the work he did by himself he also collaborated with other scientists on additional projects including the Bose–Einstein statistics, the Einstein refrigerator and others.
         </p>
         <p className='career-text'>
-          The Annus Mirabilis papers are four articles pertaining to the photoelectric effect (which gave rise to quantum theory), Brownian motion, the special theory of relativity, and E = mc2 that Einstein published in the Annalen der Physik scientific journal in 1905. These four works contributed substantially to the foundation of modern physics and changed views on space, time, and matter. The four papers are:
+          The Annus Mirabilis papers are four articles pertaining to the photoelectric effect (which gave rise to quantum theory),
+          <span tabIndex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content=" Brownian motion is the random motion of particles suspended in a medium.">
+            <span id="popover"> Brownian motion</span>
+          </span>
+          , the special theory of relativity, and
+          <span tabIndex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content=" In physics, mass–energy equivalence is the relationship between mass and energy in a system's rest frame, where the two quantities differ only by a multiplicative constant and the units of measurement. The principle is described by the physicist Albert Einstein's formula: 𝐸=𝑚𝑐2 {\displaystyle E=mc^{2}}.[3] In a reference frame where the system is moving, its relativistic energy and relativistic mass (instead of rest mass) obey the same formula.">
+            <span id="popover">E = mc^2</span>
+          </span>
+          that Einstein published in the Annalen der Physik scientific journal in 1905. These four works contributed substantially to the foundation of modern physics and changed views on space, time, and matter. The four papers are:
         </p>
       </section>
 
@@ -128,7 +190,11 @@ function career() {
                 <td>Brownian motion</td>
                 <td>11 May</td>
                 <td>18 June</td>
-                <td>Explained empirical evidence for the atomic theory, supporting the application of statistical physics.</td>
+                <td>Explained empirical evidence for the
+                  <span tabIndex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content=" Atomic theory is the scientific theory that matter is composed of particles called atoms. The definition of the word atom has changed over the years in response to scientific discoveries. Initially, it referred to a hypothetical concept of there being some fundamental particle of matter, too small to be seen by the naked eye, that could not be divided. ">
+                    <span id="popover">atomic theory</span>
+                  </span>
+                  , supporting the application of statistical physics.</td>
               </tr>
               <tr>
                 <td>"On the Electrodynamics of Moving Bodies"</td>
@@ -143,7 +209,7 @@ function career() {
                 <td>Matter–energy equivalence</td>
                 <td>27 September</td>
                 <td>21 November</td>
-                <td>	Equivalence of matter and energy, E = mc2, the existence of "rest energy", and the basis of nuclear energy.</td>
+                <td>Equivalence of matter and energy, E = mc2, the existence of "rest energy", and the basis of nuclear energy.</td>
               </tr>
             </tbody>
           </table>
@@ -153,12 +219,20 @@ function career() {
       <h3>Statistical mechanics</h3>
       <h6>Thermodynamic fluctuations and statistical physics</h6>
       <p className='career-text'>
-        Einstein's first paper submitted in 1900 to Annalen der Physik was on capillary attraction. It was published in 1901 with the title "Folgerungen aus den Capillaritätserscheinungen", which translates as "Conclusions from the capillarity phenomena". Two papers he published in 1902–1903 (thermodynamics) attempted to interpret atomic phenomena from a statistical point of view. These papers were the foundation for the 1905 paper on Brownian motion, which showed that Brownian movement can be construed as firm evidence that molecules exist. His research in 1903 and 1904 was mainly concerned with the effect of finite atomic size on diffusion phenomena.
+        Einstein's first paper submitted in 1900 to Annalen der Physik was on
+        <span tabIndex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content=" Capillary action is the process of a liquid flowing in a narrow space in opposition to or at least without the assistance of any external forces like gravity.">
+          <span id="popover">capillary attraction</span>
+        </span>
+        . It was published in 1901 with the title "Folgerungen aus den Capillaritätserscheinungen", which translates as "Conclusions from the capillarity phenomena". Two papers he published in 1902–1903 (thermodynamics) attempted to interpret atomic phenomena from a statistical point of view. These papers were the foundation for the 1905 paper on Brownian motion, which showed that Brownian movement can be construed as firm evidence that molecules exist. His research in 1903 and 1904 was mainly concerned with the effect of finite atomic size on diffusion phenomena.
       </p>
 
       <h6>Theory of critical opalescence</h6>
       <p className='career-text'>
-        Einstein returned to the problem of thermodynamic fluctuations, giving a treatment of the density variations in a fluid at its critical point. Ordinarily the density fluctuations are controlled by the second derivative of the free energy with respect to the density. At the critical point, this derivative is zero, leading to large fluctuations. The effect of density fluctuations is that light of all wavelengths is scattered, making the fluid look milky white. Einstein relates this to Rayleigh scattering, which is what happens when the fluctuation size is much smaller than the wavelength, and which explains why the sky is blue. Einstein quantitatively derived critical opalescence from a treatment of density fluctuations, and demonstrated how both the effect and Rayleigh scattering originate from the atomistic constitution of matter.
+        Einstein returned to the problem of thermodynamic fluctuations, giving a treatment of the density variations in a fluid at its critical point. Ordinarily the density fluctuations are controlled by the second derivative of the free energy with respect to the density. At the critical point, this derivative is zero, leading to large fluctuations. The effect of density fluctuations is that light of all wavelengths is scattered, making the fluid look milky white. Einstein relates this to Rayleigh scattering, which is what happens when the fluctuation size is much smaller than the wavelength, and which explains why the sky is blue. Einstein quantitatively derived critical opalescence from a treatment of density fluctuations, and demonstrated how both the effect and
+        <span tabIndex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Rayleigh scattering (/ˈreɪli/ RAY-lee), named after the 19th-century British physicist Lord Rayleigh (John William Strutt),[1] is the predominantly elastic scattering of light, or other electromagnetic radiation, by particles with a size much smaller than the wavelength of the radiation. ">
+          <span id="popover">Rayleigh scattering</span>
+        </span>
+        originate from the atomistic constitution of matter.
       </p>
 
       <h6>Special relativity</h6>
@@ -194,7 +268,11 @@ function career() {
         In 1917, Einstein applied the general theory of relativity to the structure of the universe as a whole. He discovered that the general field equations predicted a universe that was dynamic, either contracting or expanding. As observational evidence for a dynamic universe was lacking at the time, Einstein introduced a new term, the cosmological constant, into the field equations, in order to allow the theory to predict a static universe. The modified field equations predicted a static universe of closed curvature, in accordance with Einstein's understanding of Mach's principle in these years. This model became known as the Einstein World or Einstein's static universe
       </p>
       <p className='career-text'>
-        Following the discovery of the recession of the galaxies by Edwin Hubble in 1929, Einstein abandoned his static model of the universe, and proposed two dynamic models of the cosmos, the Friedmann–Einstein universe of 1931 and the Einstein–de Sitter universe of 1932.In each of these models, Einstein discarded the cosmological constant, claiming that it was "in any case theoretically unsatisfactory".
+        Following the discovery of the recession of the galaxies by Edwin Hubble in 1929, Einstein abandoned his static model of the universe, and proposed two dynamic models of the cosmos, the Friedmann–Einstein universe of 1931 and the
+        <span tabIndex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="The Einstein–de Sitter universe is a model of the universe proposed by Albert Einstein and Willem de Sitter in 1932.On first learning of Edwin Hubble's discovery of a linear relation between the redshift of the galaxies and their distance,Einstein set the cosmological constant to zero in the Friedmann equations, resulting in a model of the expanding universe known as the Friedmann–Einstein universe. ">
+          <span id="popover">Einstein–de Sitter universe</span>
+        </span>
+        of 1932.In each of these models, Einstein discarded the cosmological constant, claiming that it was "in any case theoretically unsatisfactory".
       </p>
       <div className='col-xl-12 col-lg-12'>
         <img src={career_img7} className="career_img_2" alt="..." />
@@ -203,7 +281,11 @@ function career() {
         In many Einstein biographies, it is claimed that Einstein referred to the cosmological constant in later years as his "biggest blunder", based on a letter George Gamow claimed to have received from him. The astrophysicist Mario Livio has cast doubt on this claim
       </p>
       <p className='career-text'>
-        In late 2013, a team led by the Irish physicist Cormac O'Raifeartaigh discovered evidence that, shortly after learning of Hubble's observations of the recession of the galaxies, Einstein considered a steady-state model of the universe. In a hitherto overlooked manuscript, apparently written in early 1931, Einstein explored a model of the expanding universe in which the density of matter remains constant due to a continuous creation of matter, a process that he associated with the cosmological constant.As he stated in the paper, "In what follows, I would like to draw attention to a solution to equation (1) that can account for Hubbel's [sic] facts, and in which the density is constant over time" ... "If one considers a physically bounded volume, particles of matter will be continually leaving it. For the density to remain constant, new particles of matter must be continually formed in the volume from space."
+        In late 2013, a team led by the Irish physicist
+        <span tabIndex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Cormac O'Raifeartaigh (Cormac O'Rafferty) is an Irish physicist based at Waterford Institute of Technology in Ireland. A solid-state physicist by training, he is best known for several contributions to the study of the history and philosophy of 20th century science, including the discovery that Albert Einstein once attempted a steady-state model of the expanding universe, many years before Fred Hoyle. ">
+          <span id="popover">Cormac O'Raifeartaigh</span>
+        </span>
+        discovered evidence that, shortly after learning of Hubble's observations of the recession of the galaxies, Einstein considered a steady-state model of the universe. In a hitherto overlooked manuscript, apparently written in early 1931, Einstein explored a model of the expanding universe in which the density of matter remains constant due to a continuous creation of matter, a process that he associated with the cosmological constant.As he stated in the paper, "In what follows, I would like to draw attention to a solution to equation (1) that can account for Hubbel's [sic] facts, and in which the density is constant over time" ... "If one considers a physically bounded volume, particles of matter will be continually leaving it. For the density to remain constant, new particles of matter must be continually formed in the volume from space."
       </p>
       <p className='career-text'>
         It thus appears that Einstein considered a steady-state model of the expanding universe many years before Hoyle, Bondi and Gold.However, Einstein's steady-state model contained a fundamental flaw and he quickly abandoned the idea.
@@ -251,7 +333,11 @@ function career() {
       <h4>Old quantum theory</h4>
       <h6>Photons and energy quanta</h6>
       <p className='career-text'>
-        n a 1905 paper,Einstein postulated that light itself consists of localized particles (quanta). Einstein's light quanta were nearly universally rejected by all physicists, including Max Planck and Niels Bohr. This idea only became universally accepted in 1919, with Robert Millikan's detailed experiments on the photoelectric effect, and with the measurement of Compton scattering.
+        n a 1905 paper,Einstein postulated that light itself consists of localized particles (
+        <span tabIndex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="In physics, a quantum (pl.: quanta) is the minimum amount of any physical entity (physical property) involved in an interaction. Quantum is a discrete quantity of energy proportional in magnitude to the frequency of the radiation it represents.">
+          <span id="popover">quanta</span>
+        </span>
+        ). Einstein's light quanta were nearly universally rejected by all physicists, including Max Planck and Niels Bohr. This idea only became universally accepted in 1919, with Robert Millikan's detailed experiments on the photoelectric effect, and with the measurement of Compton scattering.
       </p>
       <div className='col-xl-12 col-lg-12'>
         <img src={career_img9} className="career_img_2" alt="..." />
@@ -288,18 +374,30 @@ function career() {
 
       <h6>Stimulated emission</h6>
       <p className='career-text'>
-        In 1917, at the height of his work on relativity, Einstein published an article in Physikalische Zeitschrift that proposed the possibility of stimulated emission, the physical process that makes possible the maser and the laser.This article showed that the statistics of absorption and emission of light would only be consistent with Planck's distribution law if the emission of light into a mode with n photons would be enhanced statistically compared to the emission of light into an empty mode. This paper was enormously influential in the later development of quantum mechanics, because it was the first paper to show that the statistics of atomic transitions had simple laws
+        In 1917, at the height of his work on relativity, Einstein published an article in
+        <span tabIndex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Physikalische Zeitschrift (English: Physical Journal) was a German scientific journal of physics published from 1899 to 1945 by S. Hirzel Verlag. In 1924, it merged with Jahrbuch der Radioaktivität und Elektronik. From 1944 onwards, the journal published the Reichsberichte für Physik (English: Reich Reports for Physics).">
+          <span id="popover">Physikalische Zeitschrift</span>
+        </span>
+        that proposed the possibility of stimulated emission, the physical process that makes possible the maser and the laser.This article showed that the statistics of absorption and emission of light would only be consistent with Planck's distribution law if the emission of light into a mode with n photons would be enhanced statistically compared to the emission of light into an empty mode. This paper was enormously influential in the later development of quantum mechanics, because it was the first paper to show that the statistics of atomic transitions had simple laws
       </p>
 
       <h6>Matter waves</h6>
       <p className='career-text'>
-        Einstein discovered Louis de Broglie's work and supported his ideas, which were received skeptically at first. In another major paper from this era, Einstein observed that de Broglie waves could explain the quantization rules of Bohr and Sommerfeld. This paper would inspire Schrödinger's work of 1926
+        Einstein discovered Louis de Broglie's work and supported his ideas, which were received skeptically at first. In another major paper from this era, Einstein observed that de Broglie waves could explain the quantization rules of Bohr and Sommerfeld. This paper would inspire
+        <span tabIndex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Erwin Rudolf Josef Alexander Schrödinger (UK: /ˈʃrɜːdɪŋə, ˈʃroʊdɪŋə/, US: /ˈʃroʊdɪŋər/;[2] German: [ˈɛɐ̯vɪn ˈʃʁøːdɪŋɐ]; 12 August 1887 – 4 January 1961), sometimes written as Schroedinger or Schrodinger, was a Nobel Prize–winning Austrian and naturalized Irish physicist who developed fundamental results in quantum theory.">
+          <span id="popover">Schrödinger's</span>
+        </span>
+        work of 1926
       </p>
 
       <h4>Quantum mechanics</h4>
       <h6>Einstein's objections to quantum mechanics</h6>
       <p className='career-text'>
-        Einstein played a major role in developing quantum theory, beginning with his 1905 paper on the photoelectric effect. However, he became displeased with modern quantum mechanics as it had evolved after 1925, despite its acceptance by other physicists. He was skeptical that the randomness of quantum mechanics was fundamental rather than the result of determinism, stating that God "is not playing at dice".Until the end of his life, he continued to maintain that quantum mechanics was incomplete
+        Einstein played a major role in developing quantum theory, beginning with his 1905 paper on the photoelectric effect. However, he became displeased with modern quantum mechanics as it had evolved after 1925, despite its acceptance by other physicists. He was skeptical that the randomness of quantum mechanics was fundamental rather than the result of determinism, stating that God "is not playing at dice".Until the end of his life, he continued to maintain that
+        <span tabIndex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Quantum mechanics is a fundamental theory in physics that describes the behavior of nature at and below the scale of atoms. It is the foundation of all quantum physics, which includes quantum chemistry, quantum field theory, quantum technology, and quantum information science.">
+          <span id="popover">quantum mechanics </span>
+        </span>
+        was incomplete
       </p>
       <div className='col-xl-12 col-lg-12'>
         <img src={career_img11} className="career_img_2" alt="..." />
@@ -357,7 +455,11 @@ function career() {
       </div>
       <p className='career-text'>
         The Einstein-de Haas experiment is the only experiment concived, realized and published by Albert Einstein himself.
-        A complete original version of the Einstein-de Haas experimental equipment was donated by Geertruida de Haas-Lorentz, wife of de Haas and daughter of Lorentz, to the Ampère Museum in Lyon France in 1961 where it is currently on display. It was lost among the museum's holdings and was rediscovered in 2023
+        A complete original version of the Einstein-de Haas experimental equipment was donated by
+        <span tabIndex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Geertruida Luberta de Haas-Lorentz was a Dutch physicist and professor of the Technical University of Delft. She was the first to theoretically study thermal fluctuations in electric circuits, treating electrons as Brownian particles.">
+          <span id="popover">Geertruida de Haas-Lorentz</span>
+        </span>
+        , wife of de Haas and daughter of Lorentz, to the Ampère Museum in Lyon France in 1961 where it is currently on display. It was lost among the museum's holdings and was rediscovered in 2023
       </p>
       <h6>Einstein as an inventor</h6>
       <p className='career-text'>
@@ -371,4 +473,4 @@ function career() {
   )
 }
 
-export default career
+export default Career

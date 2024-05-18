@@ -1,4 +1,4 @@
-#biographer-container{
+#biographer-container {
     padding-left: 10%;
     padding-right: 10%;
     margin-top: 6%;
@@ -8,10 +8,19 @@
 
 
 @media only screen and (max-width: 818px) {
-    #biographer-container{
+    #biographer-container {
         padding-left: 5%;
         padding-right: 3%;
     }
-    
-    
+
+
+}
+
+#popover {
+    color: rgb(27, 131, 147);
+    text-align: center;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    text-decoration: underline;
+
 }
