@@ -1,0 +1,20 @@
+.footer-container{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 0.2%;  
+}
+
+.footer-text1{
+    font-weight: 700;
+    font-size: small;
+}
+
+.footer-text2{
+    font-size: smaller;  
+}
+
+.footer-text3{
+    font-size: smaller;
+}

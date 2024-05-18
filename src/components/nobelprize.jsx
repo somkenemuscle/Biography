@@ -5,7 +5,8 @@ import award from "../image/download.png";
 function nobelprize() {
     return (
         <div id='nobelprize-container'>
-            <h2>Nobel Prize</h2>
+            <h3 className="nobelprize-heading">Nobel Prize</h3>
+            <hr />
             <div className="row">
                 <div className="col-xl-6 col-md-12 col-sm-12">
                     <img className="einstein_award_png" src={award} alt="award" />

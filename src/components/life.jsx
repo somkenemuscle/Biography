@@ -16,6 +16,8 @@ export default function Life() {
     }, []); // empty dependency array to mimic componentDidMount
     return (
         <div id='life-container'>
+              <h3 className="life-heading">EINSTEIN'S LIFE</h3>
+              <hr />
             <img src={life_einstein_png} className="life_einstein_png" alt="..." />
             <p className="life-text">
                 Einstein was born on March 14, 1879, in Ulm, Germany, a town that today has a population of just more than 120,000.

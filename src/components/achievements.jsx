@@ -4,8 +4,13 @@ import '../styles/achievements.css';
 function achievement() {
     return (
         <div id="achievement-container">
+<<<<<<< HEAD
             <h3>Achievements</h3>
             <hr className="hr2" />
+=======
+            <h3 className="achievement-heading">Achievements</h3>
+            <hr />
+>>>>>>> e223e421a25af04c0c2dcab97b879753c299bf01
             <ol className="list-group list-group-numbered list-group list-group list-group-flush">
                 <li className="list-group-item d-flex justify-content-between align-items-start">
                     <div className="ms-2 me-auto">
